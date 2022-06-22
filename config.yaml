@@ -2,3 +2,8 @@
 root: './data'
 img_size: 28
 batch_size: 128
+
+# Parameters for model architecture
+in_channels: 3
+in_features: 768
+out_features: 10
