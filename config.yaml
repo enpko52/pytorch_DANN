@@ -1,9 +1,19 @@
 # Parameters for datasets
 root: './data'
 img_size: 28
-batch_size: 128
+batch_size: 32
 
 # Parameters for model architecture
 in_channels: 3
 in_features: 768
 out_features: 10
+
+# Parameters for training
+epochs: 100
+save: './save'
+momentum: 0.9
+gamma: 10
+lr:
+  initial_lr: 0.01
+  alpha: 10
+  beta: 0.75
