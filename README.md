@@ -65,3 +65,8 @@ The result of experiments is the average of 5 experiments below.
 
 ## Visualizations
 ![visualizations](https://user-images.githubusercontent.com/97284065/175574285-ef19218e-6922-434f-bd06-4913390af4f7.png)
+
+
+## Reference
+ - [https://github.com/fungtion/DANN](https://github.com/fungtion/DANN)
+ - [https://github.com/NaJaeMin92/pytorch_DANN](https://github.com/NaJaeMin92/pytorch_DANN)
