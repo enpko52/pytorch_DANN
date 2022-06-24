@@ -21,11 +21,11 @@ torhvision 0.12.0
 
 If the models need to train, follow the below instruction. 
 
-> `Train the models on source-only`
+> Train the models on source-only
 > ```
 > python main.py --source 'mnist' --target 'mnistm' --mode 'source-only' --train
 > ```
-> `Train the models on DANN`
+> Train the models on DANN
 > ```
 > python main.py --source 'mnist' --target 'mnistm' --mode 'dann' --train
 > ```
@@ -33,11 +33,11 @@ If the models need to train, follow the below instruction.
 
 If the models only test, follow the below instruction.
 
-> `Test the models on source-only`
+> Test the models on source-only
 > ```
 > python main.py --source 'mnist' --target 'mnistm' --mode 'source-only' --extractor 'weights_filename' --classifier 'weights_filename'
 > ```
-> `Test the models on DANN`
+> Test the models on DANN
 > ```
 > python main.py --source 'mnist' --target 'mnistm' --mode 'dann' --extractor 'weights_filename' --classifier 'weights_filename'
 > ```
@@ -47,7 +47,7 @@ If the models only test, follow the below instruction.
 
 `MNIST → MNIST-M`
 |             |  Paper | This repo |
-| ----------- | ------ | --------- |
+| :---------: | :----: | :-------: |
 | Source-Only | 0.5225 |   0.6195  |
 |    DANN     | 0.7666 |   0.8050  |
 
