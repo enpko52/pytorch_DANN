@@ -32,7 +32,7 @@ class Extractor(nn.Module):
 class Classifier(nn.Module):
     """ The neural network class for classifying labels """
 
-    def __init__(self, in_features, out_features):
+    def __init__(self, in_features, out_features=10):
 
         super(Classifier, self).__init__()
         self.in_features = in_features
@@ -58,11 +58,11 @@ class Classifier(nn.Module):
 class Discriminator(nn.Module):
     """ The neural network class for discriminating domain label """
 
-    def __init__(self, in_features):
+    def __init__(self, in_features, out_features=2):
 
         super(Discriminator, self).__init__()
         self.in_features = in_features
-        self.out_features = 2
+        self.out_features = out_features
 
         self.discriminator = nn.Sequential(
             nn.Linear(in_features=self.in_features, out_features=100),
