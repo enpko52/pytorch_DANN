@@ -17,3 +17,6 @@ lr:
   initial_lr: 0.01
   alpha: 10
   beta: 0.75
+
+# Parameters for visualization
+visual_root: './imgs'

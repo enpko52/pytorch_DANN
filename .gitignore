@@ -133,3 +133,6 @@ data/
 
 # Models
 save/
+
+# Visualization
+imgs/
