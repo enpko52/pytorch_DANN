@@ -104,13 +104,16 @@ def visualize(extractor, source_loader, target_loader, filename):
         domain.extend([0] * src_data[0].shape[0])
         domain.extend([1] * tgt_data[0].shape[0])
 
+    # Load a model and images to GPU
+    extractor = extractor.cuda()
+    images = torch.tensor(images).cuda()
+
     # Extract the feature maps
-    images = torch.tensor(images)
     features = extractor(images)
 
     # Reduce the feature dimensions
     tsne = TSNE(n_components=2, perplexity=30., n_iter=3000, init='pca')
-    features = tsne.fit_transform(features.detach().numpy())
+    features = tsne.fit_transform(features.detach().cpu().numpy())
 
     # Plotting
     _plot_graph(features, labels, domain, filename)
