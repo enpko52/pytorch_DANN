@@ -56,15 +56,11 @@ The result of experiments is the average of 5 experiments below.
 
 ### Details
 
-`Source-Only`
-|          | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
-| -------- |--------| ------ | ------ | ------ | ------ |
-| Accuracy | 0.6160 | 0.6251 | 0.6162 | 0.6193 | 0.6208 |
-
-`DANN`
-|          | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
-| -------- |--------| ------ | ------ | ------ | ------ |
-| Accuracy | 0.8205 | 0.7816 | 0.8035 | 0.8281 | 0.7911 |
+`MNIST → MNIST-M`
+|             | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
+| :---------: |--------| ------ | ------ | ------ | ------ |
+| Source-Only | 0.6160 | 0.6251 | 0.6162 | 0.6193 | 0.6208 |
+|    DANN     | 0.8205 | 0.7816 | 0.8035 | 0.8281 | 0.7911 |
 
 
 ## Visualizations
